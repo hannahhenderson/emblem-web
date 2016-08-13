@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const addRouter = require('./router');
 const sockets = require('./sockets');
 const connection = require('./db/db');
@@ -16,6 +17,7 @@ const log = message => {
   /* eslint-enable no-console */
 };
 
+app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use(bodyParser.raw({
