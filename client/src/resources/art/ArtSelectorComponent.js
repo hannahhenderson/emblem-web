@@ -56,7 +56,7 @@ class ArtSelector extends React.Component {
     constructor(props) {
       super(props);
       
-      this.art = [{id: 12}, {id: 13}, {id: 14}]//this.props.files.splice(12, this.props.files.length-13);
+      this.art = [{id: 1}, {id: 10}, {id: 11}]//this.props.files.splice(12, this.props.files.length-13);
     }
 
     componentDidMount() {
